@@ -1,0 +1,43 @@
+:root{
+    --orange-color:#DA722C;
+    --dark-blue-color:#023047;
+    --dark-color:#070917;
+    --light-color:#E8F7FB;
+    --light-blue-color:#6F7DFB;
+
+}
+*,
+*::after,
+::before{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: "poppins",sans-serif
+}
+.btn{
+    padding: 16px 32px;
+    border-radius: 24px;
+    color: #ffff;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    position: relative;
+}
+.btn.dark{
+background: var(--dark-color);
+}
+.btn.light{
+background: var(--orange-color);
+}
+.btn.enroll-icon::before{
+    content:url("images/Vector.svg") ;
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    transform: translateY(-50%);
+}
+.btn.enroll-icon{
+    padding-left: 60px;
+}
